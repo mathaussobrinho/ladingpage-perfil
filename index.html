@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Mathaus Sobrinho - Desenvolvedor | Portfólio e Projetos">
+  <title>Mathaus Sobrinho | Desenvolvedor</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#hero" class="logo">&lt;MS/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="hero-greeting">Olá, eu sou</p>
+        <h1 class="hero-name">Mathaus Sobrinho</h1>
+        <p class="hero-title">Desenvolvedor</p>
+        <p class="hero-location">Contagem, MG · Brasil</p>
+        <div class="hero-cta">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-outline">Falar comigo</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">terminal</span>
+          </div>
+          <pre class="code-content"><code><span class="code-prompt">$</span> whoami
+Mathaus Sobrinho · Dev · 31 anos
+
+
+<span class="code-prompt">$</span> location
+Contagem, Minas Gerais</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="sobre-layout">
+        <div class="sobre-col-texto">
+          <h2 class="section-title"><span class="section-num">01.</span> Sobre</h2>
+          <div class="sobre-content">
+            <p class="sobre-text">
+              Desenvolvedor com foco em criar soluções que funcionam. Moro em <strong>Contagem, MG</strong>, tenho <strong>31 anos</strong> e trabalho com tecnologias modernas, APIs e integrações para entregar projetos que fazem diferença.
+            </p>
+            <div class="sobre-stats">
+              <div class="stat"><span class="stat-num" data-count="31">0</span><span class="stat-label">anos</span></div>
+              <div class="stat"><span class="stat-num">MG</span><span class="stat-label">Contagem</span></div>
+            </div>
+          </div>
+        </div>
+        <img src="HD.png" alt="Mathaus Sobrinho" class="sobre-foto">
+      </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+      <h2 class="section-title"><span class="section-num">02.</span> Habilidades</h2>
+      <p class="section-desc">Hard skills – tecnologias e ferramentas com as quais trabalho.</p>
+      <div class="skills-list">
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">React Native</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">.NET</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Azure</span>
+        <span class="skill-tag">Amazon AWS</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">n8n</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">Ubuntu</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">API REST</span>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="section-title"><span class="section-num">03.</span> Projetos</h2>
+      <p class="section-desc">Alguns dos projetos que desenvolvi e estão disponíveis no servidor.</p>
+      <p class="section-login">Todos os sistemas possuem um usuário para testar.<br><br><strong>Login:</strong> test@test &nbsp; <strong>Password:</strong> test</p>
+      <div class="projetos-grid" id="projetos-grid">
+        <!-- Projetos injetados via JS -->
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2 class="section-title"><span class="section-num">04.</span> Contato</h2>
+      <p class="contato-text">Quer conversar sobre um projeto ou oportunidade?</p>
+      <div class="contato-links">
+        <a href="https://wa.me/5531992905100" class="contato-card" target="_blank" rel="noopener">
+          <span class="contato-icon contato-icon-svg contato-icon-wpp" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.78-1.48-1.741-1.653-2.039-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <span class="contato-label">WhatsApp</span>
+          <span class="contato-value">(31) 99290-5100</span>
+        </a>
+        <a href="mailto:mathausdev@gmail.com" class="contato-card">
+          <span class="contato-icon contato-icon-svg contato-icon-gmail" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L2.455 4.64 12 9.548l9.545-4.91 1.473 1.145C22.674 2.28 24 3.434 24 5.457z"/><path fill="#4285F4" d="M16.273 12 24 5.457c0-.904-.24-1.636-1.091-1.636h-6.545L12 9.548l-4.364-5.727H1.091C.24 3.821 0 4.553 0 5.457L7.636 12 0 18.544v.822c0 .904.732 1.636 1.636 1.636h3.819V11.73L12 16.64l4.364-3.273V20h3.819c.904 0 1.636-.732 1.636-1.636V12h-5.546z"/><path fill="#34A853" d="M7.636 12v8.182H1.636A1.636 1.636 0 0 1 0 18.546V12h7.636z"/><path fill="#FBBC05" d="M16.364 12V20h5.455c.904 0 1.636-.732 1.636-1.636V12h-7.091z"/></svg>
+          </span>
+          <span class="contato-label">E-mail</span>
+          <span class="contato-value">mathausdev@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mathaussobrinho/" class="contato-card" target="_blank" rel="noopener">
+          <span class="contato-icon contato-icon-svg contato-icon-linkedin" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </span>
+          <span class="contato-label">LinkedIn</span>
+          <span class="contato-value">mathaussobrinho</span>
+        </a>
+        <a href="https://github.com/mathaussobrinho" class="contato-card" target="_blank" rel="noopener">
+          <span class="contato-icon contato-icon-svg contato-icon-github" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.174-1.332-1.426-1.332-1.426-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </span>
+          <span class="contato-label">GitHub</span>
+          <span class="contato-value">mathaussobrinho</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido por <a href="https://sysmath.com.br" target="_blank" rel="noopener">Sysmath</a></p>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
